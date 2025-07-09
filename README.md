@@ -27,7 +27,7 @@ Weather being clear or visibility exceeding a certain level.
 
 Improve understanding of how different weather parameters interact under certain conditions.
 
-- **Dataset Link:** [Movies Dataset](https://github.com/SurendraPatidar1/Weather_Data_Analysis_Using-Pandas/blob/main/file.csv)
+- **Dataset Link:** [Weather Dataset](https://github.com/SurendraPatidar1/Weather_Data_Analysis_Using-Pandas/blob/main/file.csv)
 
 ## Business Problems and Solutions
 
@@ -98,10 +98,8 @@ print(data[data['Weather'] == 'Fog'])
 # Q)14. Find all the instances when 'Weather is Clear' or 'Visibility is above 40' ?
 print(data[(data['Weather'] == 'Clear') | (data['Visibility_km'] > 40)])
 
-# Q)15. Find all the Instances When - 'Weather is Clear and Realtive Humidity is above
-#     A:- 'Weather is Clear and Realtive Humidity is greater than 50 ?
-#     OR
-#     B:- 'Visibility is Above 40'?
+# Q)15. Find all the Instances When - 'Weather is Clear and Realtive Humidity is above --- A:- 'Weather is Clear and Realtive Humidity is greater than 50 ?
+OR #     B:- 'Visibility is Above 40'?
 print(
     data[
         ((data['Weather'] == 'Clear') & (data['Rel Hum_%'] > 50))   |
@@ -109,3 +107,9 @@ print(
     ]
 )
 
+
+
+This project demonstrates how to effectively use Pandas for data exploration and analysis on a real-world weather dataset. By answering specific questions and deriving insights, it showcases the power of Python for data manipulation, cleaning, and statistical analysis.
+
+Feel free to extend this analysis by incorporating visualizations or applying machine learning techniques for predictive modeling.
+If you have suggestions, improvements, or questions, contributions are welcome!
